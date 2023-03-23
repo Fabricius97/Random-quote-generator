@@ -14,4 +14,4 @@ const quotes = [
   randomQuoteButton.addEventListener("click", function () {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     quotesEl.textContent = quotes[randomIndex];
-  });
+  });  
