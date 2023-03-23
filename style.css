@@ -1,0 +1,83 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+    min-width: none;
+    margin: 10px;
+}
+
+.container {
+    border-radius: 20px;
+    height: 320px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(217, 19%, 24%);
+    position: relative;
+    text-align: center;
+}
+
+.quotes {
+    display: flex;
+    box-sizing: border-box;
+    height: 40%;
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bottom-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.border-gap {
+    width: 80%; 
+   text-align: center; 
+   border-bottom: 1px solid grey; 
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+.border-gap span {
+    background-color: hsl(217, 19%, 24%);
+    padding: 10px;
+}
+
+.random-quote-button {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: transparent;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute; /* add this line */
+    bottom: -35px; /* add this line */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    
+}
+
+.random-quote-button:hover {
+    box-shadow: 0px 0px 50px 2px hsl(150, 100%, 66%);  
+}
+
+
