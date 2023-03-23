@@ -1,5 +1,3 @@
-
- 
 const randomQuoteButton = document.getElementById("random-quote-button");
 const quotesEl = document.getElementById("quote");
 const advideID = document.getElementById("advide-id");
@@ -10,10 +8,6 @@ async function getData() {
     quotesEl.innerText = data.slip.advice;
     advideID.innerText = data.slip.id;   
 } 
-
 randomQuoteButton.addEventListener("click", () => {
     getData();
 })
-
-getData();  
-  
